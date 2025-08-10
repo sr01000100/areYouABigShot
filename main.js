@@ -1,5 +1,6 @@
 const button=document.getElementById("button")
 let image=document.getElementById("image")
+let sound=new Audio("bigshot.mp3")
 
 button.addEventListener("click",function(){
 
@@ -9,6 +10,7 @@ button.addEventListener("click",function(){
     if(num==69||num==67){
         document.getElementById("resp").innerHTML="Yes"
         image.removeAttribute("hidden")
+        sound.play();
     }else{
         document.getElementById("resp").innerHTML="No"
         image.setAttribute("hidden","hidden")
